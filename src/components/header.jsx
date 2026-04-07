@@ -1,4 +1,4 @@
-import './header.css'
+import '../styles/components/header.css'
 
 const navItems = [
   { label: 'Servicios', href: '#servicios' },

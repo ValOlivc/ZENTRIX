@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadFull } from 'tsparticles'
 import { getParticlesConfig } from '../js/particlesConfig'
-import './particles-background.css'
+import '../styles/components/particles-background.css'
 
 export default function ParticlesBackground() {
   const [engineReady, setEngineReady] = useState(false)

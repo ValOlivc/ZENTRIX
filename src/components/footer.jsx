@@ -1,4 +1,4 @@
-import './footer.css'
+import '../styles/components/footer.css'
 
 const socialLinks = [
   {

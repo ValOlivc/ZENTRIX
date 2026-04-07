@@ -1,4 +1,4 @@
-import './home.css'
+import '../../styles/sections/home.css'
 
 export default function Home() {
   return (
