@@ -9,7 +9,7 @@ export function getParticlesConfig(reducedMotion) {
             },
             particles: {
                 number: {
-                    value: 40,
+                    value: 100,
                     density: {
                         enable: true,
                         area: 1000,
@@ -19,7 +19,7 @@ export function getParticlesConfig(reducedMotion) {
                     value: "#ff4b2d80",
                 },
                 shape: {
-                    type: "circle",
+                    type: "polygon",
                 },
                 opacity: {
                     value: 0.4,
@@ -51,7 +51,7 @@ export function getParticlesConfig(reducedMotion) {
         },
         particles: {
             number: {
-                value: 80,
+                value: 100,
                 density: {
                     enable: true,
                     area: 900,
@@ -61,7 +61,7 @@ export function getParticlesConfig(reducedMotion) {
                 value: "#ff4b2d80",
             },
             shape: {
-                type: "circle",
+                type: "polygon",
             },
             opacity: {
                 value: 0.6,
