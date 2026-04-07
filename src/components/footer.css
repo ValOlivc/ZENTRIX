@@ -1,3 +1,9 @@
+.footer-shell {
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
 .site-footer {
     --footer-fg: rgba(255, 255, 255, 0.92);
     --footer-muted: rgba(255, 255, 255, 0.65);
