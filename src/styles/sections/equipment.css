@@ -1,0 +1,132 @@
+/* Equipo — fondo transparente; las tarjetas son blancas para contraste sobre el shell. */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&display=swap');
+
+.equipment {
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+}
+
+.equipment__inner {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    box-sizing: border-box;
+}
+
+.equipment__title {
+    margin: 0 0 2.5rem;
+    text-align: center;
+    font-family: 'Orbitron', system-ui, sans-serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.35rem);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #ff5c32;
+}
+
+.equipment__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
+    align-items: stretch;
+}
+
+.equipment__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.75rem 1.25rem 1.5rem;
+    box-sizing: border-box;
+    background: #0000008f;
+    border-radius: 14px;
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.12),
+        0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.equipment__photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #cacaca;
+    margin-bottom: 1rem;
+}
+
+.equipment__card:hover {
+    background: #3f3f3fb9;
+}
+
+.equipment__name {
+    margin: 0 0 0.65rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #cacaca;
+}
+
+.equipment__bio {
+    margin: 0 0 0.85rem;
+    flex: 1;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    font-style: italic;
+    color: #cacaca;
+}
+
+.equipment__role {
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #c9c9c9;
+}
+
+.equipment__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    margin-top: auto;
+}
+
+.equipment__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    color: #cacaca;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.equipment__social:hover {
+    color: #ff5c32;
+}
+
+.equipment__social:focus-visible {
+    outline: 2px solid #ff5c32;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.equipment__social svg {
+    width: 18px;
+    height: 18px;
+}
+
+@media (max-width: 960px) {
+    .equipment__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .equipment__grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}

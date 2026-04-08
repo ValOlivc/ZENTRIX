@@ -1,9 +1,12 @@
+/* Sección servicios / timeline — el fondo degradado viene de `.landing-shell`. */
+
 .home2 {
     position: relative;
     background: transparent;
     overflow: hidden;
 }
 
+/* Dos columnas en escritorio; una columna en móvil (media query abajo). */
 .home2__inner {
     width: min(1200px, 100%);
     margin: 0 auto;
@@ -16,6 +19,7 @@
     box-sizing: border-box;
 }
 
+/* Zona ilustración (glow); puedes añadir aquí una imagen o figura decorativa. */
 .home2__visual {
     position: relative;
     min-height: 520px;
@@ -43,6 +47,7 @@
     padding: 0;
     display: grid;
     gap: 2rem;
+    /* Necesario para posicionar el ::before de la línea punteada. */
     position: relative;
 }
 
@@ -67,6 +72,7 @@
     align-items: start;
 }
 
+/* Por encima de la línea ::before para que el punto tape el trazo en el centro. */
 .home2__dot {
     position: relative;
     z-index: 1;

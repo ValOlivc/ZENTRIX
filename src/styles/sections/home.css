@@ -31,11 +31,10 @@
     letter-spacing: 0.02em;
     text-transform: none;
     background: linear-gradient(180deg,
-            #ff4310 19%,
-            #a52c0b 39%,
-            #4e1100 62%,
-            #a52c0b 39%,
-            #FF3800 19%);
+            #ff5c2f 0%,
+            #ff3903 50%,
+            #a12705 80%,
+            #4e1100 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -87,8 +86,8 @@
 }
 
 .home__btn--primary:hover {
-    background: #c8c8c8;
-    border-color: #c8c8c8;
+    background: #ffffff;
+    border-color: #ffffff;
 }
 
 .home__btn--secondary {

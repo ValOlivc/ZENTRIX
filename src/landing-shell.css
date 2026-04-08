@@ -1,4 +1,4 @@
-/* Fondo único para header + hero (sin costura entre ambos) */
+/* Fondo compartido por header, hero y secciones dentro de `.landing-shell` (un solo degradado). */
 .landing-shell {
     flex: 1;
     display: flex;

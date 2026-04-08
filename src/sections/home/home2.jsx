@@ -1,5 +1,10 @@
+/**
+ * Bloque "¿Qué necesitas?" — servicios en lista con timeline (puntos + línea punteada).
+ * El fondo lo aporta `.landing-shell`; esta sección es transparente.
+ */
 import '../../styles/sections/home2.css'
 
+/** Datos de cada ítem: título + texto (fácil de traducir o mover a CMS más adelante). */
 const services = [
   {
     title: 'Diseño de soluciones',
@@ -20,8 +25,9 @@ const services = [
 
 export default function Home2() {
   return (
-    <section className="home2" id="servicios" aria-label="Qué necesitas">
+    <section className="home2" id="home2" aria-label="Qué necesitas">
       <div className="home2__inner">
+        {/* Columna izquierda: reservada para ilustración / glow (estilos en home2.css). */}
         <div className="home2__visual" aria-hidden="true">
           <div className="home2__glow" />
         </div>
@@ -29,6 +35,7 @@ export default function Home2() {
         <div className="home2__content">
           <h2 className="home2__title">¿Qué necesitas?</h2>
 
+          {/* La línea vertical punteada se dibuja con `.home2__list::before` en CSS. */}
           <ul className="home2__list">
             {services.map((item) => (
               <li key={item.title} className="home2__item">

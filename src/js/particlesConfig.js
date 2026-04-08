@@ -1,7 +1,12 @@
+/**
+ * Opciones de tsParticles para el fondo del landing.
+ * @param {boolean} reducedMotion - Si es true, partículas casi estáticas (accesibilidad).
+ */
 export function getParticlesConfig(reducedMotion) {
     if (reducedMotion) {
-        // Variante estática/reducida para accesibilidad.
+        // Variante estática: sin movimiento de partículas; menos carga visual.
         return {
+            // Importante: si estuviera en true, el canvas ocuparía toda la ventana y taparía el footer.
             fullScreen: {
                 enable: false,
             },
@@ -31,7 +36,7 @@ export function getParticlesConfig(reducedMotion) {
                 links: {
                     enable: true,
                     distance: 130,
-                    color: "#fa401f5d",
+                    color: "#fa401f5d", // líneas entre partículas cercanas
                     opacity: 0.2,
                     width: 1,
                 },
@@ -44,7 +49,7 @@ export function getParticlesConfig(reducedMotion) {
     }
 
     return {
-        // Variante animada normal para desktop/mobile.
+        // Variante por defecto: movimiento e interacción hover/clic.
         fullScreen: {
             enable: false,
         },
@@ -60,7 +65,7 @@ export function getParticlesConfig(reducedMotion) {
                 },
             },
             color: {
-                value: "#fa401f5d",
+                value: "#fa401f5d", // tono acorde al tema (naranja suave, con alpha en hex 8 dígitos)
             },
             shape: {
                 type: "polygon",
