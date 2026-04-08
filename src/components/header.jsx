@@ -1,5 +1,6 @@
 import '../styles/components/header.css'
 
+// Ítems de navegación principal del header.
 const navItems = [
   { label: 'Servicios', href: '#servicios' },
   { label: 'Trabajo', href: '#trabajo' },
@@ -9,6 +10,7 @@ const navItems = [
 
 export default function Header() {
   return (
+    // Header principal con marca, navegación y CTA.
     <header className="site-header">
       <div className="site-header__inner">
         <a className="site-header__brand" href="/">

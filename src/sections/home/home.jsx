@@ -2,6 +2,7 @@ import '../../styles/sections/home.css'
 
 export default function Home() {
   return (
+    // Sección hero principal con propuesta de valor y acciones primarias.
     <section className="home" id="home" aria-label="Inicio">
       <div className="home__inner">
         <h1 className="home__title">
@@ -17,6 +18,7 @@ export default function Home() {
         </p>
 
         <div className="home__actions">
+          {/* CTA principal y CTA secundaria para navegación rápida. */}
           <a className="home__btn home__btn--primary" href="#contacto">
             Iniciar Proyecto
           </a>

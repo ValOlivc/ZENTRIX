@@ -1,5 +1,6 @@
 import '../styles/components/footer.css'
 
+// Redes sociales del bloque inferior del footer.
 const socialLinks = [
   {
     label: 'LinkedIn',
@@ -41,6 +42,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
+    // Footer con grid de columnas + franja inferior de copyright/social.
     <footer className="site-footer">
       <div className="site-footer__grid">
         <div className="site-footer__brand">
@@ -123,6 +125,7 @@ export default function Footer() {
           © 2026 Zentrix — Todos los derechos reservados.
         </p>
         <div className="site-footer__social">
+          {/* Render dinámico de iconos de redes para evitar repetición de markup. */}
           {socialLinks.map(({ label, href, icon }) => (
             <a
               key={label}

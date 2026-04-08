@@ -8,12 +8,14 @@ export default function ParticlesBackground() {
   const [engineReady, setEngineReady] = useState(false)
 
   useEffect(() => {
+    // Carga el motor completo de tsParticles una sola vez.
     initParticlesEngine(async (engine) => {
       await loadFull(engine)
     }).then(() => setEngineReady(true))
   }, [])
 
   const options = useMemo(() => {
+    // Respeta accesibilidad: menos movimiento si el usuario lo prefiere.
     const reduced =
       typeof window !== 'undefined' &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -21,6 +23,7 @@ export default function ParticlesBackground() {
   }, [])
 
   if (!engineReady) {
+    // Placeholder para mantener el espacio/capa mientras inicia el motor.
     return <div className="particles-background particles-background--placeholder" aria-hidden />
   }
 

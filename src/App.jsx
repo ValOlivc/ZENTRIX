@@ -3,6 +3,7 @@ import Header from './components/header'
 import ParticlesBackground from './components/ParticlesBackground'
 import Home from './sections/home/home'
 import './landing-shell.css'
+import Home2 from './sections/home/home2'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <ParticlesBackground />
         <Header />
         <Home />
+        <Home2 />
       </div>
       <div className="footer-shell">
         <Footer />

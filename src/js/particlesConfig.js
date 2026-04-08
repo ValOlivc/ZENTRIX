@@ -1,5 +1,6 @@
 export function getParticlesConfig(reducedMotion) {
     if (reducedMotion) {
+        // Variante estática/reducida para accesibilidad.
         return {
             fullScreen: {
                 enable: false,
@@ -9,7 +10,7 @@ export function getParticlesConfig(reducedMotion) {
             },
             particles: {
                 number: {
-                    value: 100,
+                    value: 70,
                     density: {
                         enable: true,
                         area: 1000,
@@ -22,7 +23,7 @@ export function getParticlesConfig(reducedMotion) {
                     type: "polygon",
                 },
                 opacity: {
-                    value: 0.4,
+                    value: 0.3,
                 },
                 size: {
                     value: 2.5,
@@ -30,8 +31,8 @@ export function getParticlesConfig(reducedMotion) {
                 links: {
                     enable: true,
                     distance: 130,
-                    color: "#ff4b2d80",
-                    opacity: 0.3,
+                    color: "#fa401f5d",
+                    opacity: 0.2,
                     width: 1,
                 },
                 move: {
@@ -43,6 +44,7 @@ export function getParticlesConfig(reducedMotion) {
     }
 
     return {
+        // Variante animada normal para desktop/mobile.
         fullScreen: {
             enable: false,
         },
@@ -51,35 +53,36 @@ export function getParticlesConfig(reducedMotion) {
         },
         particles: {
             number: {
-                value: 100,
+                value: 70,
                 density: {
                     enable: true,
                     area: 900,
                 },
             },
             color: {
-                value: "#ff4b2d80",
+                value: "#fa401f5d",
             },
             shape: {
                 type: "polygon",
             },
             opacity: {
-                value: 0.6,
+                value: 0.5,
             },
             size: {
                 value: {
                     min: 2,
                     max: 4
-                }, // 🔥 variación natural
+                }, // variación natural
             },
             links: {
                 enable: true,
                 distance: 150,
-                color: "#ff4b2d80",
-                opacity: 0.5,
+                color: "#fa401f5d",
+                opacity: 0.4,
                 width: 1.2,
             },
             move: {
+                // Movimiento orgánico sin dirección fija.
                 enable: true,
                 speed: 2,
                 direction: "none",
@@ -91,6 +94,7 @@ export function getParticlesConfig(reducedMotion) {
             },
         },
         interactivity: {
+            // Interacciones al pasar/clickear con el mouse.
             events: {
                 onHover: {
                     enable: true,
