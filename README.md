@@ -5,8 +5,24 @@ Hola. Este repo es la **landing** que estoy armando para presentar lo que hacemo
 Si te gusta el look **oscuro**, con chispa **naranja** y un aire un poco *sci‑fi* sin ser exagerado, probablemente te sientas en casa aquí.
 
 ---
+## Dale play: cómo se ve hoy
 
-## Qué tiene de especial (el diseño)
+Recorrido por la página y el diseño actual (reproductor embebido; también puedes **descargar** el archivo):
+
+<p align="center">
+  <video width="100%" controls playsinline preload="metadata">
+    <source src="public/zentrix-demo.mp4" type="video/mp4" />
+    Si no ves el reproductor, abre el archivo: <a href="./public/zentrix-demo.mp4"><code>public/zentrix-demo.mp4</code></a>
+  </video>
+</p>
+
+El vídeo vive en **`public/zentrix-demo.mp4`** (copia sin espacios en el nombre para que GitHub y el visor de Markdown resuelvan bien la ruta). La copia original en `src/assets/demo 1.mp4` puedes conservarla o borrarla si no la usas en código.
+
+> **GitHub:** si el vídeo no carga en la vista del README, en la barra de direcciones del archivo en el repo elige **Raw** y sustituye en el `<source>` la URL que empiece por `https://raw.githubusercontent.com/...`.
+
+---
+
+## Qué tiene de especial 
 
 No quería otra landing blanca y plana. Aposté por:
 
