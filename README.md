@@ -136,16 +136,13 @@ E --> F[Contacto]
 <p align="center">
   <img width="100%" src="https://github.com/user-attachments/assets/1ca04acf-8a49-4cb5-b431-f8e6c10888a6" alt="Vista 1"/>
   <img width="100%" src="https://github.com/user-attachments/assets/fcd09a79-7ef6-4b92-ac38-89b44baadeff" alt="Vista 2"/>
+  <img width="566" height="639" alt="Captura" src="https://github.com/user-attachments/assets/f84fbbff-0581-4066-ac23-7dd3d94a530e" />
+  <img width="1365" height="636" alt="Captura" src="https://github.com/user-attachments/assets/a0621350-155c-4ca9-ad7b-34b2e476adf6" />
+  <img width="942" height="605" alt="Captura" src="https://github.com/user-attachments/assets/0a019294-f35d-4c83-a82c-5c0729b6ee06" />
+  <img width="779" height="410" alt="Captura" src="https://github.com/user-attachments/assets/a02bcd1d-ffc4-4934-b1ac-21d75ff9d8eb" />
+  <img width="804" height="427" alt="Captura" src="https://github.com/user-attachments/assets/e4e1bd19-ea25-4f45-9754-6dac29d83ba1" />
+  <img width="753" height="275" alt="Captura" src="https://github.com/user-attachments/assets/fc1da042-c64b-4e8e-9c9b-1cf5d25d0a95" />
 </p>
-
-## Cómo se ve hoy
-
-<img width="566" height="639" alt="Captura" src="https://github.com/user-attachments/assets/f84fbbff-0581-4066-ac23-7dd3d94a530e" />
-<img width="1365" height="636" alt="Captura" src="https://github.com/user-attachments/assets/a0621350-155c-4ca9-ad7b-34b2e476adf6" />
-<img width="942" height="605" alt="Captura" src="https://github.com/user-attachments/assets/0a019294-f35d-4c83-a82c-5c0729b6ee06" />
-<img width="779" height="410" alt="Captura" src="https://github.com/user-attachments/assets/a02bcd1d-ffc4-4934-b1ac-21d75ff9d8eb" />
-<img width="804" height="427" alt="Captura" src="https://github.com/user-attachments/assets/e4e1bd19-ea25-4f45-9754-6dac29d83ba1" />
-<img width="753" height="275" alt="Captura" src="https://github.com/user-attachments/assets/fc1da042-c64b-4e8e-9c9b-1cf5d25d0a95" />
 
 ## Autor
 
