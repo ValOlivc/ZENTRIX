@@ -58,6 +58,12 @@ html::-webkit-scrollbar-button {
 html {
     scrollbar-width: thin;
     scrollbar-color: rgba(140, 52, 38, 0.95) transparent;
+    /* Saltos a #anclas respetan el header fijo */
+    scroll-padding-top: calc(5.75rem + env(safe-area-inset-top, 0px));
+
+    @media (max-width: 720px) {
+        scroll-padding-top: calc(8.25rem + env(safe-area-inset-top, 0px));
+    }
 }
 
 #root {

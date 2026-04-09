@@ -38,7 +38,7 @@
     z-index: 1;
     width: min(960px, 100%);
     margin: 0 auto;
-    padding: 1.5rem 1.25rem 2.5rem;
+    padding: 6rem 1.25rem 2.5rem 1.5rem;
     box-sizing: border-box;
     flex: 1;
 }

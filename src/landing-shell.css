@@ -1,9 +1,12 @@
 /* Fondo compartido por header, hero y secciones dentro de `.landing-shell` (un solo degradado). */
+/* Espacio superior = altura aproximada del header fijo (`.site-header`) para que el hero no quede tapado. */
 .landing-shell {
+    --landing-header-offset: calc(5.75rem + env(safe-area-inset-top, 0px));
     flex: 1;
     display: flex;
     flex-direction: column;
     min-height: 0;
+    padding-top: var(--landing-header-offset);
     overflow: hidden;
     background-color: #000;
     background-image:
@@ -19,4 +22,10 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
+}
+
+@media (max-width: 720px) {
+    .landing-shell {
+        --landing-header-offset: calc(8.25rem + env(safe-area-inset-top, 0px));
+    }
 }
