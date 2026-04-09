@@ -8,17 +8,18 @@ Si te gusta el look **oscuro**, con chispa **naranja** y un aire un poco *sci‑
 
 ## Dale play: cómo se ve hoy
 
-El recorrido por la página y el diseño actual está en el repo:
+Recorrido por la página y el diseño actual (reproductor embebido; también puedes **descargar** el archivo):
 
-**[`src/assets/demo 1.mp4`](./src/assets/demo%201.mp4)** — también puedes abrirlo o descargarlo desde ese enlace.
+<p align="center">
+  <video width="100%" controls playsinline preload="metadata">
+    <source src="public/zentrix-demo.mp4" type="video/mp4" />
+    Si no ves el reproductor, abre el archivo: <a href="./public/zentrix-demo.mp4"><code>public/zentrix-demo.mp4</code></a>
+  </video>
+</p>
 
-Vista previa embebida (si tu visor de Markdown lo permite; en GitHub suele reproducirse bien):
+El vídeo vive en **`public/zentrix-demo.mp4`** (copia sin espacios en el nombre para que GitHub y el visor de Markdown resuelvan bien la ruta). La copia original en `src/assets/demo 1.mp4` puedes conservarla o borrarla si no la usas en código.
 
-<video src="./src/assets/demo%201.mp4" controls playsinline width="100%">
-  Tu navegador no reproduce vídeo embebido; usa el enlace de arriba.
-</video>
-
-> **Nota:** El nombre del archivo lleva un espacio (`demo 1.mp4`). En enlaces web va codificado como `demo%201.mp4`. Si renombraras el archivo a `demo-1.mp4`, actualiza esta sección.
+> **GitHub:** si el vídeo no carga en la vista del README, en la barra de direcciones del archivo en el repo elige **Raw** y sustituye en el `<source>` la URL que empiece por `https://raw.githubusercontent.com/...`.
 
 ---
 
