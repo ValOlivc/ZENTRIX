@@ -1,16 +1,68 @@
-# React + Vite
+# Zentrix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web de **una sola página** (landing) para presentar servicios digitales, portafolio y contacto. Está pensado con un estilo **oscuro y tecnológico**, con acentos cálidos en **naranja/coral** y tipografía que refuerza la identidad de marca.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** + **Vite 8**
+- Estilos en **CSS** por componente y por sección (sin framework de UI)
+- **tsParticles** para el fondo animado dentro del shell principal
+- **Swiper** para el carrusel tipo *coverflow* en la galería de trabajos
 
-## React Compiler
+## Identidad visual y diseño
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Fondo:** negro profundo con **degradados radiales** (toques naranja y teal) que dan profundidad sin recargar. Las **partículas** enlazadas (`tsParticles`) añaden movimiento sutil detrás del contenido del *landing shell*.
+- **Color de acento:** naranja (`#ff5c32` y variaciones) en títulos con degradado, bordes de botones tipo *ghost* y detalles de interfaz.
+- **Tipografía:** títulos destacados con **Orbitron** (aspecto tech / futurista); cuerpo en fuentes del sistema para legibilidad.
+- **Jerarquía:** secciones con anclas (`#servicios`, `#trabajo`, `#equipo`, `#contacto`, etc.) y un **header** fijo en la experiencia principal.
+- **Footer** separado del shell animado para mantener contraste y legibilidad sobre fondo propio.
 
-## Expanding the ESLint configuration
+## Estructura del proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── App.jsx                 # Orden de secciones y estado de la galería fullscreen
+├── landing-shell.css       # Fondo compartido del hero y bloques internos
+├── components/             # Header, Footer, partículas, overlay de galería
+├── sections/home/          # Bloques de la landing (hero, servicios, galería, planes, etc.)
+├── styles/                 # CSS por componente y por sección
+├── data/                   # Datos de ejemplo (galería / carrusel)
+└── js/                     # Configuración de partículas
+```
+
+### Secciones principales (orden aproximado)
+
+1. **Home / hero** — Presentación inicial.
+2. **Home2** — Puente hacia servicios (ancla `#servicios`).
+3. **Services** — Catálogo de servicios.
+4. **Work gallery** — Carrusel de proyectos; **«Ver todo»** abre una **vista a pantalla completa** con rejilla paginada y el mismo lenguaje visual (fondo decorativo, header reutilizado).
+5. **Banner** — CTA y bloque visual lateral.
+6. **Plans** — Planes o precios.
+7. **Equipment** — Equipo.
+8. **Contact** — Formulario o datos de contacto.
+
+El **footer** vive fuera del `.landing-shell` para no mezclar el degradado animado con el pie de página.
+
+## Scripts
+
+| Comando        | Descripción              |
+| -------------- | ------------------------ |
+| `npm run dev`  | Servidor de desarrollo   |
+| `npm run build`| Compilación producción   |
+| `npm run preview` | Vista previa del build |
+| `npm run lint` | ESLint                   |
+
+## Desarrollo
+
+Requisitos: **Node.js** reciente (compatible con Vite 8).
+
+```bash
+npm install
+npm run dev
+```
+
+La app se sirve en la URL que indique Vite (por defecto `http://localhost:5173`).
+
+---
+
+*Proyecto Zentrix — landing orientada a presencia digital, portafolio y conversión.*
