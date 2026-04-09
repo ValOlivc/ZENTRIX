@@ -10,19 +10,12 @@ import 'swiper/css'
 import 'swiper/css/autoplay'
 import 'swiper/css/effect-coverflow'
 
+import { WORK_GALLERY_CAROUSEL } from '../../data/workGalleryData'
 import '../../styles/sections/workgallery.css'
 
-/** Capturas de ejemplo; sustituye `src` por assets reales en `public/` o `assets/`. */
-const PROJECTS = [
-  { id: 'wg-1', src: 'https://picsum.photos/seed/zentrixwg1/960/600', alt: 'Proyecto web 1' },
-  { id: 'wg-2', src: 'https://picsum.photos/seed/zentrixwg2/960/600', alt: 'Proyecto web 2' },
-  { id: 'wg-3', src: 'https://picsum.photos/seed/zentrixwg3/960/600', alt: 'Proyecto web 3' },
-  { id: 'wg-4', src: 'https://picsum.photos/seed/zentrixwg4/960/600', alt: 'Proyecto web 4' },
-  { id: 'wg-5', src: 'https://picsum.photos/seed/zentrixwg5/960/600', alt: 'Proyecto web 5' },
-  { id: 'wg-6', src: 'https://picsum.photos/seed/zentrixwg6/960/600', alt: 'Proyecto web 6' },
-]
+const PROJECTS = WORK_GALLERY_CAROUSEL
 
-export default function WorkGallery() {
+export default function WorkGallery({ onOpenFull }) {
   const [reduceMotion, setReduceMotion] = useState(false)
 
   useEffect(() => {
@@ -95,9 +88,9 @@ export default function WorkGallery() {
           </Swiper>
         </div>
 
-        <a className="work-gallery__cta" href="#contacto">
+        <button type="button" className="work-gallery__cta" onClick={() => onOpenFull?.()}>
           VER TODO
-        </a>
+        </button>
       </div>
     </section>
   )
