@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&display=swap');
+
+.home {
+    --home-text: #d1d1d1;
+
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-height: min(70svh, 720px);
+    background: transparent;
+}
+
+.home__inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1126px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.home__title {
+    margin: 0;
+    font-family: 'Orbitron', system-ui, sans-serif;
+    font-weight: 1000;
+    font-size: clamp(1.85rem, 5.2vw, 4.15rem);
+    line-height: 1.08;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    background: linear-gradient(180deg,
+            #ff5c2f 0%,
+            #ff3903 50%,
+            #a12705 80%,
+            #4e1100 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.home__title-line {
+    display: block;
+}
+
+.home__lead {
+    margin: 1.5rem 0 0;
+    max-width: 34rem;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--home-text);
+    font-weight: 400;
+}
+
+.home__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.85rem 1rem;
+    margin-top: 2rem;
+}
+
+.home__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem 1.6rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition:
+        opacity 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.home__btn--primary {
+    background: #b0b0b0;
+    color: #000;
+    border-color: #b0b0b0;
+}
+
+.home__btn--primary:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+}
+
+.home__btn--secondary {
+    background: transparent;
+    color: #e8e8e8;
+    border-color: rgba(255, 255, 255, 0.55);
+}
+
+.home__btn--secondary:hover {
+    border-color: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.home__btn:focus-visible {
+    outline: 2px solid rgba(255, 120, 80, 0.9);
+    outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+    .home {
+        min-height: auto;
+        padding-bottom: 0.5rem;
+    }
+
+    .home__inner {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .home__actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .home__btn {
+        width: 100%;
+    }
+}

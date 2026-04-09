@@ -1,0 +1,27 @@
+/* Contenedor del canvas de tsParticles: solo cubre `.landing-shell`, no toda la página. */
+
+.particles-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    z-index: 0;
+    /* No intercepta clics: header, CTAs y enlaces siguen siendo usables. */
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.particles-background--placeholder {
+    pointer-events: none;
+}
+
+/* El motor inserta el canvas aquí; lo forzamos al tamaño del contenedor (no fullscreen). */
+.particles-background canvas {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
