@@ -1,16 +1,6 @@
 <h1 align="center">
   Zentrix
 </h1>
-
-Hola. Este repo es la **landing** que estoy armando para presentar lo que hacemos: servicios, trabajo en equipo y una forma clara de contacto. No es un panel admin ni una tienda: es **una sola página** que cuenta la historia con scroll, anclas y un par de sorpresas visuales.
-
-Si te gusta el look **oscuro**, con chispa **naranja** y un aire un poco *sci‑fi* sin ser exagerado, probablemente te sientas en casa aquí.
-
----
-## Dale play: cómo se ve hoy
-
-Recorrido por la página y el diseño actual (reproductor embebido; también puedes **descargar** el archivo):
-
 <p align="center">
   Experiencia visual moderna · Oscura · Interactiva
 </p>
@@ -21,7 +11,14 @@ Recorrido por la página y el diseño actual (reproductor embebido; también pue
   <img src="https://img.shields.io/badge/Status-Active-ff5c32?style=for-the-badge"/>
 </p>
 
+Hola. Este repo es la **landing** que estoy armando para presentar lo que hacemos: servicios, trabajo en equipo y una forma clara de contacto. No es un panel admin ni una tienda: es **una sola página** que cuenta la historia con scroll, anclas y un par de sorpresas visuales.
+
+Si te gusta el look **oscuro**, con chispa **naranja** y un aire un poco *sci‑fi* sin ser exagerado, probablemente te sientas en casa aquí.
+
 ---
+## Dale play: cómo se ve hoy
+
+Recorrido por la página y el diseño actual 
 
 <p align="center">
   <img src="./src/assets/demozentrix.gif" width="100%" alt="Demo animada de Zentrix" />
@@ -42,7 +39,7 @@ En conjunto: oscuro pero cálido, ordenado y con personalidad propia.
 
 ---
 
-## 🧠 ¿Qué es Zentrix?
+##  ¿Qué es Zentrix?
 
 Zentrix no es una landing común.
 
@@ -53,7 +50,7 @@ Es una experiencia diseñada para:
 
 ---
 
-## ✨ Experiencia interactiva
+##  Experiencia interactiva
 
 <p align="center">
 
@@ -65,25 +62,15 @@ Es una experiencia diseñada para:
 
 </p>
 
-- 🌌 Fondo dinámico con partículas  
-- ✨ Botones con efecto glow  
-- 🎯 Animaciones al hacer scroll  
-- 🧠 Microinteracciones  
-- 🎬 Transiciones suaves  
+-  Fondo dinámico con partículas  
+-  Botones con efecto glow  
+-  Animaciones al hacer scroll  
+-  Microinteracciones  
+-  Transiciones suaves  
 
 ---
 
-## 🎬 Demo
-
-<p align="center">
-  <a href="./public/zentrix-demo.mp4">
-    <img src="./public/preview.png" width="90%" />
-  </a>
-</p>
-
----
-
-## 🧩 Diseño visual
+## Diseño visual
 
 <div align="center">
 
@@ -99,14 +86,14 @@ Es una experiencia diseñada para:
 
 </div>
 
-- 🎨 Paleta oscura + naranja (#ff5c32)  
-- 🧬 Estética sci-fi equilibrada  
-- 🔠 Tipografía Orbitron  
-- 📐 Jerarquía clara  
+- Paleta oscura + naranja (#ff5c32)  
+- Estética sci-fi equilibrada  
+- Tipografía Orbitron  
+- Jerarquía clara  
 
 ---
 
-## 🛠️ Stack
+##  Stack
 
 <div align="center">
 
@@ -122,7 +109,7 @@ Es una experiencia diseñada para:
 
 ---
 
-## 🧱 Arquitectura
+##  Arquitectura
 
 ```bash
 src/
@@ -133,7 +120,7 @@ src/
 ├── data/
 └── js/
 ```
-## ⚡ Flujo de experiencia
+##  Flujo de experiencia
 
 <div align="center">
 flowchart LR
@@ -144,7 +131,7 @@ D --> E[Equipo]
 E --> F[Contacto]
 </div>
 
-## 🖼️ Vista
+## Vista
 
 <p align="center">
   <img width="100%" src="https://github.com/user-attachments/assets/1ca04acf-8a49-4cb5-b431-f8e6c10888a6" alt="Vista 1"/>
@@ -160,23 +147,21 @@ E --> F[Contacto]
 <img width="804" height="427" alt="Captura" src="https://github.com/user-attachments/assets/e4e1bd19-ea25-4f45-9754-6dac29d83ba1" />
 <img width="753" height="275" alt="Captura" src="https://github.com/user-attachments/assets/fc1da042-c64b-4e8e-9c9b-1cf5d25d0a95" />
 
-## 🚀 Filosofía
+## Autor
 
-Zentrix no busca solo verse bien.
+<p align="center">
 
-Busca sentirse fluida, moderna y natural.
+<svg width="80" height="80" fill="#ff5c32">
+  <circle cx="40" cy="40" r="35" stroke="#ff5c32" stroke-width="2" fill="none"/>
+  <path d="M25 45 Q40 20 55 45" stroke="#ff5c32" stroke-width="3" fill="none"/>
+</svg>
 
-## 🧑‍💻 Autor
+</p>
 
-Proyecto enfocado en:
+<p align="center">
+  <strong>Valeria Nicols Olivares Chiroque</strong><br/>
+  Frontend Developer · UI/UX · Interfaces modernas
+</p>
 
-UI moderna
-UX fluida
-identidad visual
-
-## 💬 Final
-
-Una landing no debería solo mostrar.
-Debería hacer sentir algo.
 
 **— Zentrix**
