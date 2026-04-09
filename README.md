@@ -8,20 +8,17 @@ Si te gusta el look **oscuro**, con chispa **naranja** y un aire un poco *sci‑
 
 ## Dale play: cómo se ve hoy
 
-Nada como un vídeo para captar el movimiento del fondo, el carrusel y la galería fullscreen. **Sustituye el enlace de abajo por el tuyo** (YouTube, Loom, Vimeo o el archivo que subas a tu hosting).
+El recorrido por la página y el diseño actual está en el repo:
 
-<!-- Opción A: enlace directo (cambia la URL) -->
-**[Ver recorrido por la página y el diseño actual →](https://www.youtube.com/watch?v=TU_VIDEO_ID)**
+**[`src/assets/demo 1.mp4`](./src/assets/demo%201.mp4)** — también puedes abrirlo o descargarlo desde ese enlace.
 
-<!-- Opción B: miniatura clickeable (descomenta y pon tu ID de YouTube)
-[![Recorrido visual de Zentrix](https://img.youtube.com/vi/TU_VIDEO_ID/hqdefault.jpg)](https://www.youtube.com/watch?v=TU_VIDEO_ID)
--->
+Vista previa embebida (si tu visor de Markdown lo permite; en GitHub suele reproducirse bien):
 
-<!-- Opción C: vídeo en el repo — sube tu .mp4 a `public/` y usa la ruta en producción, por ejemplo:
-https://tudominio.com/zentrix-demo.mp4
--->
+<video src="./src/assets/demo%201.mp4" controls playsinline width="100%">
+  Tu navegador no reproduce vídeo embebido; usa el enlace de arriba.
+</video>
 
-> **Tip:** Si usas GitHub, también puedes **arrastrar un .mp4** en un comentario de issue o en el propio README al editar; te dará una URL `user-images.githubusercontent.com` que puedes pegar aquí como enlace o incrustar.
+> **Nota:** El nombre del archivo lleva un espacio (`demo 1.mp4`). En enlaces web va codificado como `demo%201.mp4`. Si renombraras el archivo a `demo-1.mp4`, actualiza esta sección.
 
 ---
 
