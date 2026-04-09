@@ -1,96 +1,145 @@
-# Zentrix
-
-Hola. Este repo es la **landing** que estoy armando para presentar lo que hacemos: servicios, trabajo en equipo y una forma clara de contacto. No es un panel admin ni una tienda: es **una sola página** que cuenta la historia con scroll, anclas y un par de sorpresas visuales.
-
-Si te gusta el look **oscuro**, con chispa **naranja** y un aire un poco *sci‑fi* sin ser exagerado, probablemente te sientas en casa aquí.
-
----
-
-## Dale play: cómo se ve hoy
-
-Recorrido por la página y el diseño actual (reproductor embebido; también puedes **descargar** el archivo):
+<h1 align="center">
+  Zentrix
+</h1>
 
 <p align="center">
-  <video width="100%" controls playsinline preload="metadata">
-    <source src="public/zentrix-demo.mp4" type="video/mp4" />
-    Si no ves el reproductor, abre el archivo: <a href="./public/zentrix-demo.mp4"><code>public/zentrix-demo.mp4</code></a>
-  </video>
+  Experiencia visual moderna · Oscura · Interactiva
 </p>
 
-El vídeo vive en **`public/zentrix-demo.mp4`** (copia sin espacios en el nombre para que GitHub y el visor de Markdown resuelvan bien la ruta). La copia original en `src/assets/demo 1.mp4` puedes conservarla o borrarla si no la usas en código.
-
-> **GitHub:** si el vídeo no carga en la vista del README, en la barra de direcciones del archivo en el repo elige **Raw** y sustituye en el `<source>` la URL que empiece por `https://raw.githubusercontent.com/...`.
-
----
-
-## Qué tiene de especial (el diseño)
-
-No quería otra landing blanca y plana. Aposté por:
-
-- **Fondo vivo:** negro con **degradados** suaves (naranja y un toque **teal**) para que no se sienta una caja vacía.
-- **Partículas** conectadas (`tsParticles`) que se mueven detrás del contenido sin robar foco.
-- **Tipografía Orbitron** en los titulares: remata el rollo tecnológico; el cuerpo del texto sigue siendo cómodo de leer en sistema.
-- **Acento naranja** (`#ff5c32` y familia) en degradados, bordes de botones tipo *ghost* y CTAs.
-- **Galería de trabajos** con carrusel *coverflow* (Swiper) y, si le das a **«Ver todo»**, se abre una **vista completa** con rejilla y paginación, mismo lenguaje visual.
-- El **footer** va aparte del bloque principal a propósito: así el pie se lee bien sin pelear con el degradado animado.
-
-En conjunto: oscuro pero cálido, ordenado y con personalidad propia.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-0ea5e9?style=for-the-badge&logo=react"/>
+  <img src="https://img.shields.io/badge/Vite-8-7c3aed?style=for-the-badge&logo=vite"/>
+  <img src="https://img.shields.io/badge/Status-Active-ff5c32?style=for-the-badge"/>
+</p>
 
 ---
 
-## Stack (por si te interesa el código)
-
-| Qué | Con qué |
-| --- | --- |
-| Interfaz | **React 19** |
-| Build | **Vite 8** |
-| Estilos | **CSS** a mano, por componente y sección |
-| Fondo animado | **tsParticles** |
-| Carrusel de proyectos | **Swiper** |
-
-Sin Tailwind ni librería de componentes: más control, más curación visual.
+<p align="center">
+  <img src="./src/assets/demozentrix.gif" width="100%" />
+</p>
 
 ---
 
-## Cómo está organizado el proyecto
+## 🧠 ¿Qué es Zentrix?
 
-```
+Zentrix no es una landing común.
+
+Es una experiencia diseñada para:
+- captar atención en segundos  
+- mantener interés con movimiento  
+- guiar visualmente sin saturar  
+
+---
+
+## ✨ Experiencia interactiva
+
+<p align="center">
+
+<!-- SVG ICONS INLINE -->
+<svg width="60" height="60" fill="#ff5c32">
+  <circle cx="30" cy="30" r="28" stroke="#ff5c32" stroke-width="2" fill="none"/>
+  <path d="M20 30 L28 38 L42 22" stroke="#ff5c32" stroke-width="3" fill="none"/>
+</svg>
+
+</p>
+
+- 🌌 Fondo dinámico con partículas  
+- ✨ Botones con efecto glow  
+- 🎯 Animaciones al hacer scroll  
+- 🧠 Microinteracciones  
+- 🎬 Transiciones suaves  
+
+---
+
+## 🎬 Demo
+
+<p align="center">
+  <a href="./public/zentrix-demo.mp4">
+    <img src="./public/preview.png" width="90%" />
+  </a>
+</p>
+
+---
+
+## 🧩 Diseño visual
+
+<div align="center">
+
+<svg width="500" height="120">
+  <defs>
+    <linearGradient id="grad1">
+      <stop offset="0%" stop-color="#ff5c32"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="500" height="120" fill="url(#grad1)" rx="20"/>
+</svg>
+
+</div>
+
+- 🎨 Paleta oscura + naranja (#ff5c32)  
+- 🧬 Estética sci-fi equilibrada  
+- 🔠 Tipografía Orbitron  
+- 📐 Jerarquía clara  
+
+---
+
+## 🛠️ Stack
+
+<div align="center">
+
+| Tecnología | Uso |
+|----------|-----|
+| React 19 | Interfaz |
+| Vite 8 | Build |
+| CSS | Estilos |
+| tsParticles | Fondo |
+| Swiper | Carrusel |
+
+</div>
+
+---
+
+## 🧱 Arquitectura
+
+```bash
 src/
-├── App.jsx              → orden de secciones + estado de la galería fullscreen
-├── landing-shell.css    → “caja” visual compartida (hero + bloques)
-├── components/          → Header, Footer, partículas, overlay de galería
-├── sections/home/       → cada bloque de la landing
-├── styles/              → CSS por pieza
-├── data/                → datos de ejemplo (galería / carrusel)
-└── js/                  → config de partículas
+├── App.jsx
+├── components/
+├── sections/
+├── styles/
+├── data/
+└── js/
 ```
+## ⚡ Flujo de experiencia
 
-Flujo aproximado al bajar la página: **Home** → puente a servicios → **Servicios** → **Galería de trabajo** (carrusel + opción “ver todo”) → **Banner** → **Planes** → **Equipo** → **Contacto**. El pie queda fuera del shell animado.
+<div align="center">
+flowchart LR
+A[Home] --> B[Servicios]
+B --> C[Galería]
+C --> D[Planes]
+D --> E[Equipo]
+E --> F[Contacto]
+</div>
 
----
+## 🖼️ Vista
+<p align="center"> <img width="100%" src="https://github.com/user-attachments/assets/1ca04acf-8a49-4cb5-b431-f8e6c10888a6"/> <img width="100%" src="https://github.com/user-attachments/assets/fcd09a79-7ef6-4b92-ac38-89b44baadeff"/> </p>
+🚀 Filosofía
 
-## Cómo levantar el proyecto en tu máquina
+Zentrix no busca solo verse bien.
 
-Necesitas **Node.js** razonablemente actual (va bien con Vite 8).
+Busca sentirse fluida, moderna y natural.
 
-```bash
-npm install
-npm run dev
-```
+## 🧑‍💻 Autor
 
-Abre lo que te indique la terminal (suele ser `http://localhost:5173`). Para compilar:
+Proyecto enfocado en:
 
-```bash
-npm run build
-npm run preview   # ver el build como en producción
-```
+UI moderna
+UX fluida
+identidad visual
 
-Y si quieres pasar el linter: `npm run lint`.
+## 💬 Final
 
----
+Una landing no debería solo mostrar.
+Debería hacer sentir algo.
 
-## Última palabra
-
-Este README lo fui dejando como **bitácora** del diseño y del stack. Si algo no cuadra o quieres proponer un cambio, adelante: el código y la página siguen en evolución.
-
-**— Zentrix**
