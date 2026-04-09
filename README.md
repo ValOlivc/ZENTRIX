@@ -6,23 +6,6 @@ Si te gusta el look **oscuro**, con chispa **naranja** y un aire un poco *sci‑
 
 ---
 
-## Dale play: cómo se ve hoy
-
-Recorrido por la página y el diseño actual (reproductor embebido; también puedes **descargar** el archivo):
-
-<p align="center">
-  <video width="100%" controls playsinline preload="metadata">
-    <source src="public/zentrix-demo.mp4" type="video/mp4" />
-    Si no ves el reproductor, abre el archivo: <a href="./public/zentrix-demo.mp4"><code>public/zentrix-demo.mp4</code></a>
-  </video>
-</p>
-
-El vídeo vive en **`public/zentrix-demo.mp4`** (copia sin espacios en el nombre para que GitHub y el visor de Markdown resuelvan bien la ruta). La copia original en `src/assets/demo 1.mp4` puedes conservarla o borrarla si no la usas en código.
-
-> **GitHub:** si el vídeo no carga en la vista del README, en la barra de direcciones del archivo en el repo elige **Raw** y sustituye en el `<source>` la URL que empiece por `https://raw.githubusercontent.com/...`.
-
----
-
 ## Qué tiene de especial (el diseño)
 
 No quería otra landing blanca y plana. Aposté por:
@@ -69,28 +52,14 @@ Flujo aproximado al bajar la página: **Home** → puente a servicios → **Serv
 
 ---
 
-## Cómo levantar el proyecto en tu máquina
-
-Necesitas **Node.js** razonablemente actual (va bien con Vite 8).
-
-```bash
-npm install
-npm run dev
-```
-
-Abre lo que te indique la terminal (suele ser `http://localhost:5173`). Para compilar:
-
-```bash
-npm run build
-npm run preview   # ver el build como en producción
-```
-
-Y si quieres pasar el linter: `npm run lint`.
-
----
-
-## Última palabra
-
-Este README lo fui dejando como **bitácora** del diseño y del stack. Si algo no cuadra o quieres proponer un cambio, adelante: el código y la página siguen en evolución.
+## Como se ve hoy
+<img width="1365" height="634" alt="image" src="https://github.com/user-attachments/assets/1ca04acf-8a49-4cb5-b431-f8e6c10888a6" />
+<img width="1365" height="634" alt="image" src="https://github.com/user-attachments/assets/fcd09a79-7ef6-4b92-ac38-89b44baadeff" />
+<img width="566" height="639" alt="image" src="https://github.com/user-attachments/assets/f84fbbff-0581-4066-ac23-7dd3d94a530e" />
+<img width="1365" height="636" alt="image" src="https://github.com/user-attachments/assets/a0621350-155c-4ca9-ad7b-34b2e476adf6" />
+<img width="942" height="605" alt="image" src="https://github.com/user-attachments/assets/0a019294-f35d-4c83-a82c-5c0729b6ee06" />
+<img width="779" height="410" alt="image" src="https://github.com/user-attachments/assets/a02bcd1d-ffc4-4934-b1ac-21d75ff9d8eb" />
+<img width="804" height="427" alt="image" src="https://github.com/user-attachments/assets/e4e1bd19-ea25-4f45-9754-6dac29d83ba1" />
+<img width="753" height="275" alt="image" src="https://github.com/user-attachments/assets/fc1da042-c64b-4e8e-9c9b-1cf5d25d0a95" />
 
 **— Zentrix**
