@@ -1,68 +1,98 @@
 # Zentrix
 
-Sitio web de **una sola página** (landing) para presentar servicios digitales, portafolio y contacto. Está pensado con un estilo **oscuro y tecnológico**, con acentos cálidos en **naranja/coral** y tipografía que refuerza la identidad de marca.
+Hola. Este repo es la **landing** que estoy armando para presentar lo que hacemos: servicios, trabajo en equipo y una forma clara de contacto. No es un panel admin ni una tienda: es **una sola página** que cuenta la historia con scroll, anclas y un par de sorpresas visuales.
 
-## Stack
+Si te gusta el look **oscuro**, con chispa **naranja** y un aire un poco *sci‑fi* sin ser exagerado, probablemente te sientas en casa aquí.
 
-- **React 19** + **Vite 8**
-- Estilos en **CSS** por componente y por sección (sin framework de UI)
-- **tsParticles** para el fondo animado dentro del shell principal
-- **Swiper** para el carrusel tipo *coverflow* en la galería de trabajos
+---
 
-## Identidad visual y diseño
+## Dale play: cómo se ve hoy
 
-- **Fondo:** negro profundo con **degradados radiales** (toques naranja y teal) que dan profundidad sin recargar. Las **partículas** enlazadas (`tsParticles`) añaden movimiento sutil detrás del contenido del *landing shell*.
-- **Color de acento:** naranja (`#ff5c32` y variaciones) en títulos con degradado, bordes de botones tipo *ghost* y detalles de interfaz.
-- **Tipografía:** títulos destacados con **Orbitron** (aspecto tech / futurista); cuerpo en fuentes del sistema para legibilidad.
-- **Jerarquía:** secciones con anclas (`#servicios`, `#trabajo`, `#equipo`, `#contacto`, etc.) y un **header** fijo en la experiencia principal.
-- **Footer** separado del shell animado para mantener contraste y legibilidad sobre fondo propio.
+Nada como un vídeo para captar el movimiento del fondo, el carrusel y la galería fullscreen. **Sustituye el enlace de abajo por el tuyo** (YouTube, Loom, Vimeo o el archivo que subas a tu hosting).
 
-## Estructura del proyecto
+<!-- Opción A: enlace directo (cambia la URL) -->
+**[Ver recorrido por la página y el diseño actual →](https://www.youtube.com/watch?v=TU_VIDEO_ID)**
+
+<!-- Opción B: miniatura clickeable (descomenta y pon tu ID de YouTube)
+[![Recorrido visual de Zentrix](https://img.youtube.com/vi/TU_VIDEO_ID/hqdefault.jpg)](https://www.youtube.com/watch?v=TU_VIDEO_ID)
+-->
+
+<!-- Opción C: vídeo en el repo — sube tu .mp4 a `public/` y usa la ruta en producción, por ejemplo:
+https://tudominio.com/zentrix-demo.mp4
+-->
+
+> **Tip:** Si usas GitHub, también puedes **arrastrar un .mp4** en un comentario de issue o en el propio README al editar; te dará una URL `user-images.githubusercontent.com` que puedes pegar aquí como enlace o incrustar.
+
+---
+
+## Qué tiene de especial (el diseño)
+
+No quería otra landing blanca y plana. Aposté por:
+
+- **Fondo vivo:** negro con **degradados** suaves (naranja y un toque **teal**) para que no se sienta una caja vacía.
+- **Partículas** conectadas (`tsParticles`) que se mueven detrás del contenido sin robar foco.
+- **Tipografía Orbitron** en los titulares: remata el rollo tecnológico; el cuerpo del texto sigue siendo cómodo de leer en sistema.
+- **Acento naranja** (`#ff5c32` y familia) en degradados, bordes de botones tipo *ghost* y CTAs.
+- **Galería de trabajos** con carrusel *coverflow* (Swiper) y, si le das a **«Ver todo»**, se abre una **vista completa** con rejilla y paginación, mismo lenguaje visual.
+- El **footer** va aparte del bloque principal a propósito: así el pie se lee bien sin pelear con el degradado animado.
+
+En conjunto: oscuro pero cálido, ordenado y con personalidad propia.
+
+---
+
+## Stack (por si te interesa el código)
+
+| Qué | Con qué |
+| --- | --- |
+| Interfaz | **React 19** |
+| Build | **Vite 8** |
+| Estilos | **CSS** a mano, por componente y sección |
+| Fondo animado | **tsParticles** |
+| Carrusel de proyectos | **Swiper** |
+
+Sin Tailwind ni librería de componentes: más control, más curación visual.
+
+---
+
+## Cómo está organizado el proyecto
 
 ```
 src/
-├── App.jsx                 # Orden de secciones y estado de la galería fullscreen
-├── landing-shell.css       # Fondo compartido del hero y bloques internos
-├── components/             # Header, Footer, partículas, overlay de galería
-├── sections/home/          # Bloques de la landing (hero, servicios, galería, planes, etc.)
-├── styles/                 # CSS por componente y por sección
-├── data/                   # Datos de ejemplo (galería / carrusel)
-└── js/                     # Configuración de partículas
+├── App.jsx              → orden de secciones + estado de la galería fullscreen
+├── landing-shell.css    → “caja” visual compartida (hero + bloques)
+├── components/          → Header, Footer, partículas, overlay de galería
+├── sections/home/       → cada bloque de la landing
+├── styles/              → CSS por pieza
+├── data/                → datos de ejemplo (galería / carrusel)
+└── js/                  → config de partículas
 ```
 
-### Secciones principales (orden aproximado)
+Flujo aproximado al bajar la página: **Home** → puente a servicios → **Servicios** → **Galería de trabajo** (carrusel + opción “ver todo”) → **Banner** → **Planes** → **Equipo** → **Contacto**. El pie queda fuera del shell animado.
 
-1. **Home / hero** — Presentación inicial.
-2. **Home2** — Puente hacia servicios (ancla `#servicios`).
-3. **Services** — Catálogo de servicios.
-4. **Work gallery** — Carrusel de proyectos; **«Ver todo»** abre una **vista a pantalla completa** con rejilla paginada y el mismo lenguaje visual (fondo decorativo, header reutilizado).
-5. **Banner** — CTA y bloque visual lateral.
-6. **Plans** — Planes o precios.
-7. **Equipment** — Equipo.
-8. **Contact** — Formulario o datos de contacto.
+---
 
-El **footer** vive fuera del `.landing-shell` para no mezclar el degradado animado con el pie de página.
+## Cómo levantar el proyecto en tu máquina
 
-## Scripts
-
-| Comando        | Descripción              |
-| -------------- | ------------------------ |
-| `npm run dev`  | Servidor de desarrollo   |
-| `npm run build`| Compilación producción   |
-| `npm run preview` | Vista previa del build |
-| `npm run lint` | ESLint                   |
-
-## Desarrollo
-
-Requisitos: **Node.js** reciente (compatible con Vite 8).
+Necesitas **Node.js** razonablemente actual (va bien con Vite 8).
 
 ```bash
 npm install
 npm run dev
 ```
 
-La app se sirve en la URL que indique Vite (por defecto `http://localhost:5173`).
+Abre lo que te indique la terminal (suele ser `http://localhost:5173`). Para compilar:
+
+```bash
+npm run build
+npm run preview   # ver el build como en producción
+```
+
+Y si quieres pasar el linter: `npm run lint`.
 
 ---
 
-*Proyecto Zentrix — landing orientada a presencia digital, portafolio y conversión.*
+## Última palabra
+
+Este README lo fui dejando como **bitácora** del diseño y del stack. Si algo no cuadra o quieres proponer un cambio, adelante: el código y la página siguen en evolución.
+
+**— Zentrix**
