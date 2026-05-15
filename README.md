@@ -16,9 +16,10 @@ Hola. Este repo es la **landing** que estoy armando para presentar lo que hacemo
 Si te gusta el look **oscuro**, con chispa **naranja** y un aire un poco *sci‑fi* sin ser exagerado, probablemente te sientas en casa aquí.
 
 ---
-## Dale play: cómo se ve hoy
+## Cómo se ve hoy
 
 Recorrido por la página y el diseño actual 
+
 
 <p align="center">
   <img src="./src/assets/demozentrix.gif" width="100%" alt="Demo animada de Zentrix" />

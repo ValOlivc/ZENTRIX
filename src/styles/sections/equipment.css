@@ -10,7 +10,7 @@
 .equipment__inner {
     width: min(1120px, 100%);
     margin: 0 auto;
-    padding: 3rem 1.5rem 4rem;
+    padding: 0.4rem 1.5rem 4rem;
     box-sizing: border-box;
 }
 
